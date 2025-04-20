@@ -1,0 +1,22 @@
+.products-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.products-btns button{
+    background-color: #00ddff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.products-btns button:hover{
+    background-color: #00715D;
+    color: #ffffff;
+}

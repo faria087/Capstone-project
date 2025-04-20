@@ -1,0 +1,211 @@
+.land4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: #081010;
+    min-height: 600px;
+
+}
+.land4-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.land4-content.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.land4-content p {
+    font-size: 20px;
+    color: #02c49d;
+}
+
+.land4-content h2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+/* ICON DESIGN */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-thumb {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
+    line-height: 0px;
+    padding-bottom: 4px;
+}
+
+.icon-thumb:first-of-type {
+    align-items: flex-end;
+}
+
+.icon-thumb:last-of-type {
+    align-items: flex-start;
+}
+
+.icon-thumb span {
+    width: 90px;
+    height: 1px;
+    background-color: #02c49d;
+    display: inline-block;
+    line-height: 0px;
+}
+
+.icon-thumb span:nth-of-type(1) {
+    width: 56px;
+}
+
+
+.land4-content-card-container{
+  width: 100%;
+  max-width: 1500px;
+  height: 1500px;
+  display: grid;
+  gap: 1.5vw;
+  padding: 1vw;
+  grid-template-columns: repeat(6, 2fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "hero hero  aside2 aside2 aside3 aside3"
+    "hero hero aside2 aside2 aside3 aside3"
+    "hero hero aside2 aside2 aside3 aside3"
+    "aside4 aside4 aside4 aside4 aside3 aside3"
+    "aside4 aside4 aside4 aside4 aside3 aside3"
+    ;
+   margin-left: 200px;
+
+   opacity: 0;
+   transform: translateX(-100px);
+   transition: transform 1s ease-out, opacity 1s ease-out;
+}
+.land4-content-card-container.animate {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.grid-item{
+    border: 2px solid #464545;
+    border-radius: 5px;
+    position: relative;
+}
+
+.land4-content-card-container .grid-item:nth-child(1){
+    grid-area: hero;
+}
+
+.land4-content-card-container .grid-item:nth-child(2){
+    grid-area: aside2;
+}
+
+.land4-content-card-container .grid-item:nth-child(3){
+    grid-area: aside3;
+}
+
+.land4-content-card-container .grid-item:nth-child(4){
+    grid-area: aside4;
+}
+
+.grid-item .grid-item-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+    border-radius: 5px;
+}
+
+.grid-item .grid-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.grid-item .grid-item-img img:hover {
+    transform: scale(1.1);
+}
+
+.grid-item .grid-item-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #02c49d;
+    padding: 13px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+.grid-item .grid-item-icon:hover{
+    background-color: #c4ad02;
+    color: #ffffff;
+}
+.grid-item .grid-item-content{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: 100%;
+    padding: 20px;  
+    text-align: left;
+}
+.grid-item .grid-item-content h2{
+    color: #be9f00;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.grid-item:hover .grid-item-content h2{
+    color: #ffffff;
+}
+
+
+.award-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 890px;
+    width: 100%;
+    height: 100px;
+}
+.award-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+}
+.award-section-content h1{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.award-section-content p{
+    text-align: left;
+}
+
+
+
+

@@ -1,0 +1,256 @@
+/* .team {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: #081010;
+    height: 900px;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+
+.team-content.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.team-content p {
+    font-size: 20px;
+    color: #02c49d;
+}
+
+.team-content h2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    padding: auto;
+    position: relative;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.team-members-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    gap: 40px;
+    position: relative;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background: #02c49d;
+    border-radius: 50%;
+    position: absolute;
+    top: 29px;
+    left: 49px;
+}
+
+.circle:hover {
+    background: #cbb000;
+}
+
+.team-member-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 0 120px 120px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid #ddd;
+    z-index: 1;
+    background: #081010;
+}
+.team-member-img:hover {
+    border: 20px solid #cbb000;
+}
+
+.team-member-des {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.team-member-des p {
+    color: #02c49d;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team-member-des h2 {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.team-member-des .call {
+    color: #a16e01;
+}
+
+.team-members-button{
+    position: absolute;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}
+.team-members-button span{
+    font-size: 30px;
+    color: #fecf00;
+    cursor: pointer;
+    border-radius: 50%;
+}
+ */
+
+ .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 0;
+    background-color: #081010;
+    height: 900px;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: transform 1.5s ease-out, opacity 1.5s ease-out;
+}
+.team-content.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+.team-content p {
+    font-size: 20px;
+    color: #02c49d;
+}
+
+.team-content h2 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.team-member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    position: relative;
+    padding: 20px;
+}
+
+/* Hide scrollbar */
+.team-member::-webkit-scrollbar {
+    display: none;
+}
+
+.team-members {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.team-members-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    gap: 20px;
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: #02c49d;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+    left: 28px;
+}
+
+.circle:hover {
+    background: #cbb000;
+}
+
+.team-member-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 0 120px 120px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #ddd;
+    z-index: 1;
+    background: #081010;
+}
+
+.team-member-img:hover {
+    border: 10px solid #cbb000;
+}
+
+.team-member-des {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.team-member-des p {
+    color: #02c49d;
+    font-weight: bold;
+}
+
+.team-member-des h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.team-member-des .call {
+    color: #a16e01;
+}

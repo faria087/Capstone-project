@@ -1,0 +1,14 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+  background: rgb(34, 34, 34);
+  box-sizing: border-box;
+  font-family: poppins;
+  
+}
+
+.slider{
+  margin-top: 84px;
+}

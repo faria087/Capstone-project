@@ -1,0 +1,237 @@
+.land3{
+    background-color: #081010;
+    /* padding: 50px 0; */
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    width: 100%;
+}
+.land3 .land3-bg-img{
+    text-align: center;
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.land3 .land3-bg-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.land3-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin-top: 150px;
+    width: 70%;
+
+    opacity: 0;
+    transform: translateX( 100px);
+    transition: all 1s ease-in-out;
+}
+
+.land3-container.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.lnd3-content{
+    text-align: left;
+}
+.lnd3-content p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.lnd3-content h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lnd3-content-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 530px;
+    border-radius: 30px;
+
+
+}
+
+
+.land3-content-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 60%;
+    height: 100%;
+}
+.land3-content-card-content h2{
+    color: #10250c;
+    font-size: 28px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+}
+.land3-content-card-content p{
+    color: #10250c;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: left;
+}
+.land3-content-card-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-top: 15px;
+    margin-left: 40px;
+   
+}
+.land3-content-card-content form .input{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 20px;
+    height: 40px;
+    position: relative;
+}
+.land3-content-card-content form .input input{
+    width: 700px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    background: #d4d4d4;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+    text-align: left;
+    padding-left: 80px;
+}
+.land3-content-card-content form .input input::placeholder{
+    color: #10250c;
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 800px;
+}
+.land3-content-card-content form .input label{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    top: 6px;
+}
+.land3-content-card-content form .input label span{
+    text-align: center;
+    display: block;
+}
+.land3-btn-bx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 700px;
+    height: 40px;
+    gap: 20px;
+}
+.land3-btn-bx button{
+    color: rgb(24, 7, 7);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+    width: 200px;
+    border: 2px solid #ff6c03;
+}
+.land3-btn-bx button:hover{
+    background: #ff6c03;
+    color: white;
+}
+.land3-content-card-content form h1{
+    color: #10250c;
+    font-size: 28px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+}
+.pay-method{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 80%;
+}
+.pay-method .pay-method-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: #10250c;
+}
+.pay-method .pay-method-card input{
+    width: 20px;
+    height: 20px;
+}
+.pay-method .pay-method-card label{
+    color: #10250c;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.land3-content-card-img{
+    width: 40%;
+    height: 100%;
+}
+.land3-content-card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+
+.contact-img22{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    left: 80px;
+    margin-top: 580px;
+    animation: moveAnimation 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50px); /* ছবিটি 50px ডানে যাবে */
+    }
+}

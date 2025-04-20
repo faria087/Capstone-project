@@ -1,0 +1,6 @@
+.donationpage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #2c2c2c;
+}

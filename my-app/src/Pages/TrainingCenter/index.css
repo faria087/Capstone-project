@@ -1,0 +1,94 @@
+.training-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: #1f1f1f;
+}
+
+.t-centers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+}
+
+.t-center-card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  color: #fff;
+}
+
+.t-center-card .t-center-img-bx {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.t-center-card .t-center-img-bx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.t-center-card .t-center-img-bx p{
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    right: 0;
+    background: #00ddff;
+    color: #000000;
+    padding: 10px;
+}
+
+.t-center-card .t-center-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.t-center-card .t-center-content h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+.t-center-card .t-center-content h3 {
+  color: #12dfff;
+}
+.t-center-card .t-center-content p {
+  font-size: 16px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+.t-center-card .t-center-content p span {
+  color: #12dfff;
+}
+
+.t-center-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.t-center-btns .btn {
+  background: #00715D;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background 0.3s ease;
+}
+.t-center-btns .btn:hover {
+  background: #0fb8e4;
+    color: #fff;
+}

@@ -1,0 +1,254 @@
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.top-ber{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    height: 130px;
+    background-color: #000000;
+    position: absolute;
+    position: fixed;
+    z-index: 10;
+}
+.top-ber a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    gap: 10px;
+}
+.top-ber a .logo{
+    width: 60px;
+    height: 50px;
+    margin-left: 20px;
+}
+.top-ber a p{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.top-ber form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+.top-ber form input{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    color: #000000;
+}
+.top-ber form button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f40303;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+  .nav-ber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    width: 95%;
+    color: #fff;
+    height: 90px;
+    position: relative;
+    top: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000000;
+    padding: 20px;
+    z-index: 12; 
+}
+
+.nav-ber ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-ber ul li {
+    font-size: 20px;
+}
+
+.nav-ber ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    position: relative; 
+    text-transform: uppercase;
+}
+
+.nav-ber ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f40303;
+    transition: width 0.5s ease-out;
+}
+
+.nav-ber ul li a:hover::after {
+    width: 100%; 
+}
+
+/* Tablet View (Max Width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .top-ber {
+        height: 100px;
+        padding: 10px;
+    }
+
+    .top-ber a .logo {
+        width: 50px;
+        height: 40px;
+    }
+
+    .top-ber a p {
+        font-size: 18px;
+    }
+
+    .top-ber form input {
+        width: 180px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .top-ber form button {
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .nav-ber {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-ber ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-ber ul li {
+        font-size: 18px;
+    }
+}
+
+/* Mobile View (Max Width: 768px) */
+@media screen and (max-width: 768px) {
+    .top-ber {
+        display: none;
+    }
+    
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+    }
+
+    .nav-ber {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 250px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav-ber.show {
+        left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        font-size: 20px;
+    }
+
+    .nav-icons {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+/* Small Mobile View (Max Width: 480px) */
+@media screen and (max-width: 480px) {
+    .top-ber {
+        height: auto;
+        padding: 10px;
+    }
+
+    .top-ber a .logo {
+        width: 35px;
+        height: 30px;
+    }
+
+    .top-ber a p {
+        font-size: 14px;
+    }
+
+    .top-ber form input {
+        width: 100%;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .top-ber form button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .nav-ber {
+        padding: 5px;
+    }
+
+    .nav-ber ul {
+        gap: 8px;
+    }
+
+    .nav-ber ul li {
+        font-size: 14px;
+    }
+}

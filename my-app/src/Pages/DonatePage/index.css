@@ -1,0 +1,74 @@
+.donatepage {
+  display: flex;
+  flex-direction: column;
+    min-height: 100vh;
+    background: #272727;
+}
+
+.donatepage-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.donatepage-content h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 500;
+}
+
+.donatepage-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+
+}
+
+.donatepage-content-form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.donatepage-content-form-group label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  color: aqua;
+}
+
+.donatepage-content-form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: #ddd;
+}
+
+.donatepage-content-form-group select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: #ddd;
+}
+
+
+.donatepage-content form button {
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  background: #ce8d01;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
